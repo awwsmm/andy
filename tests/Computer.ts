@@ -1,11 +1,11 @@
-import { expect } from "chai"
-import Computer from '../src/Computer'
+import { expect } from 'chai'
+import Computer from 'Computer'
 
 describe('Computer', () => {
 
   it('should know the answer', () => {
-    const map = new Computer()
-    expect(map.answer).equals(42)
+    const computer = new Computer()
+    expect(computer.answer).equals(42)
   })
 
 })
