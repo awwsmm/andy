@@ -12,6 +12,7 @@ function main() {
 
   let inputElem = document.createElement('input')
   inputElem.setAttribute('id', 'theInput')
+  inputElem.setAttribute('autocomplete', 'off')
   document.body.appendChild(inputElem)
 
   let buttonElem = document.createElement('button')
