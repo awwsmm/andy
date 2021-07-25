@@ -15,16 +15,19 @@
   },
   "keywords": [],
   "author": {
-    "name" : "Andrew Watson",
-    "email" : "aww@awwsmm.com",
-    "url" : "https://awwsmm.com"
+    "name": "Andrew Watson",
+    "email": "aww@awwsmm.com",
+    "url": "https://awwsmm.com"
   },
   "license": "MIT",
   "devDependencies": {
     "@types/chai": "^4.2.21",
     "@types/mocha": "^9.0.0",
+    "@types/selenium-webdriver": "^4.0.15",
     "chai": "^4.3.4",
+    "chromedriver": "^92.0.0",
     "mocha": "^9.0.2",
+    "selenium-webdriver": "^4.0.0-beta.4",
     "ts-loader": "^9.2.4",
     "ts-node": "^10.1.0",
     "tsconfig-paths": "^3.10.1",
