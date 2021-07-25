@@ -19,6 +19,10 @@ module.exports = {
   // file resolutions
   resolve: {
     extensions: [ '.ts', '.js' ],
+
+    alias: {
+      src: path.resolve(__dirname, 'src/')
+    },
   },
 
   // loaders

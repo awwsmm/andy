@@ -9,7 +9,7 @@
     "removeComments": true,
 
     /* Module Resolution Options */
-    "baseUrl": "./src",
+    "baseUrl": ".",
 
     /* Strict Type-Checking Options */
     "strict": true,

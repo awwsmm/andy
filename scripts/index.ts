@@ -1,5 +1,5 @@
-import Computer from '../src/Computer'
-import Output from '../src/io/Output'
+import Computer from 'src/Computer'
+import Output from 'src/io/Output'
 
 const output = new Output()
 const computer = new Computer()

@@ -1,11 +1,11 @@
 {
   /* see: https://aka.ms/tsconfig.json */
-  
+
   "include": [ "src/**/*", "tests/**/*", "scripts/**/*" ],
   "compilerOptions": {
 
     /* Module Resolution Options */
-    "baseUrl": "./src",
+    "baseUrl": ".",
 
     /* Strict Type-Checking Options */
     "strict": true,

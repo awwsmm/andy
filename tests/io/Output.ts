@@ -1,5 +1,5 @@
 import { expect } from 'chai'
-import Output from 'io/Output'
+import Output from 'src/io/Output'
 
 describe('Output', () => {
 

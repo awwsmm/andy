@@ -1,5 +1,5 @@
 import { expect } from 'chai'
-import Computer from 'Computer'
+import Computer from 'src/Computer'
 
 describe('Computer', () => {
 
