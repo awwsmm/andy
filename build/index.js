@@ -1,0 +1,2 @@
+(()=>{"use strict";const s=new class{message(){return"Hello, World!"}},e=new class{constructor(){this.answer=42}};console.log(s.message()),console.log(`The answer is ${e.answer}`),alert("Hi there!")})();
+//# sourceMappingURL=index.js.map
