@@ -4,4 +4,8 @@ export default class Output {
     return "Hello, World!"
   }
 
+  public logKeypress(key: string) {
+    console.log(key)
+  }
+
 }

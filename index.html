@@ -3,7 +3,34 @@
   <head>
     <title></title>
     <script src="build/index.js"></script>
+    <style>
+      body > div {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+      }
+      #canvas {
+        width: 600px;
+        height: 480px;
+        border: 1px solid red;
+      }
+      #start {
+        position: absolute
+      }
+    </style>
   </head>
   <body>
+    <div>
+      <div id='canvas'>
+        <button id='start'>Start</button>
+      </div>
+    </div>
   </body>
 </html>
