@@ -1,11 +1,13 @@
-To set up, you must run the following command at the directory root
+To set up, you must run the following commands at the directory root
 
-    $ npm install --save-dev ts-node tslib tsconfig-paths nodemon rimraf mocha chai @types/chai @types/mocha
+    $ npm install -D typescript tsconfig-paths ts-node # TS basics
+    $ npm install -D chai mocha @types/chai @types/mocha # for tests
+    $ npm install -D webpack webpack-cli ts-loader # for webpack publishing
 
-To run the `"scripts"` from `package.json`, do
+To build and run the main `index.html` file, do
 
-    $ npm run $SCRIPT_NAME
+    $ npm run build && npm run launch
 
-You should be able to run the test suites with
+To run the test suites, do
 
     $ npm run tests

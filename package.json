@@ -1,32 +1,35 @@
 {
   "name": "andy",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "build/index.js",
   "scripts": {
-    "clean": "rimraf ./build",
-    "tests": "mocha --require ts-node/register --require tsconfig-paths/register 'tests/**/*.ts'",
-    "build": "tsc -p tsconfig-build.json",
-    "main": "node -r ts-node/register/transpile-only -r tsconfig-paths/register build/scripts/index.js",
-    "clean:build": "npm run clean && npm run build",
-    "clean:tests": "npm run clean:build && npm run tests",
-    "clean:main": "npm run clean:build && npm run main",
-    "daemon": "nodemon"
+    "clean": "rm -rf ./build",
+    "tests": "mocha -r ts-node/register/transpile-only -r tsconfig-paths/register 'tests/**/*'",
+    "build": "webpack",
+    "launch": "open index.html",
+    "tests:daemon": "mocha -w --watch-files 'src/**/*,tests/**/*' -r ts-node/register/transpile-only -r tsconfig-paths/register 'tests/**/*'",
+    "launch:daemon": "open index.html && webpack --watch",
+    "daemon": "sh -c 'npm run tests:daemon & npm run launch:daemon & wait'",
+    "deplockUpdate": "npm run install"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": {
+    "name" : "Andrew Watson",
+    "email" : "aww@awwsmm.com",
+    "url" : "https://awwsmm.com"
+  },
+  "license": "MIT",
   "devDependencies": {
     "@types/chai": "^4.2.21",
     "@types/mocha": "^9.0.0",
-    "@types/node": "^16.4.1",
     "chai": "^4.3.4",
     "mocha": "^9.0.2",
-    "nodemon": "^2.0.12",
-    "rimraf": "^3.0.2",
+    "ts-loader": "^9.2.4",
     "ts-node": "^10.1.0",
     "tsconfig-paths": "^3.10.1",
-    "tslib": "^2.3.0",
-    "typescript": "^4.3.5"
+    "typescript": "^4.3.5",
+    "webpack": "^5.46.0",
+    "webpack-cli": "^4.7.2"
   }
 }
