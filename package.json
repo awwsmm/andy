@@ -1,6 +1,6 @@
 {
   "name": "andy",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "main": "build/index.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "tests": "mocha -r ts-node/register/transpile-only -r tsconfig-paths/register 'tests/**/*'",
     "build": "webpack",
     "launch": "open index.html",
-    "tests:daemon": "mocha -w --watch-files 'src/**/*,tests/**/*' -r ts-node/register/transpile-only -r tsconfig-paths/register 'tests/**/*'",
+    "tests:daemon": "mocha -w --watch-files 'scripts/index.ts,src/**/*,tests/**/*' -r ts-node/register/transpile-only -r tsconfig-paths/register 'tests/**/*'",
     "launch:daemon": "open index.html && webpack --watch",
     "daemon": "sh -c 'npm run tests:daemon & npm run launch:daemon & wait'",
     "deplockUpdate": "npm run install"
